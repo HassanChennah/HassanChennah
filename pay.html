@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="styll.css">
+    <title>Document</title>
+    <style>
+        body{background: #8d6f8a};
+        .rounded{border-radius: 1rem};
+        .nav-pills .nav-link{color: #555};
+        .nav-pills .nav-link.active{color: white};
+        input[type="radio"]{margin-right: 5px};
+        .bold{font-weight:bold};
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light  bg-light fixed-top  ">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand justify-content-center m-0 " id=""><img src="https://www.onlinelogomaker.com/blog/wp-content/uploads/2017/12/AdobeStock_113126068-Converted.jpg" alt="" width="80px" height="40px"></a>
+            <div id="user"><a href="pay.html" class="btn text-start"  ><i class="fa-solid fa-cart-shopping"></i></a></div>
+            <div id="user"><a href="connexion.html" class="btn "><i class="fa-solid fa-user"></i></a></div>
+            
+            <form class="container-fluid  collapse navbar-collapse" role="search" action="" id="search_form">
+                <div class="input-group">   
+                <input class="form-control rounded-pill py-1 px-lg-4 inputer" type="search" placeholder="Search">
+                <button class="btn btn-light input-group-button" type="submit" ><i class="fa-solid fa-magnifying-glass"></i>
+            </div></form>
+            
+            
+            <div class="collapse navbar-collapse"  id="">
+                <div  class="offcanvas offcanvas-start bg-black w-50" id="navcolapser">
+                <ul class="navbar-nav mx-auto" id="btnn">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Apropos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services</a>
+                        <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Hp EliteBook </a></li>
+                            <li><a class="dropdown-item" href="#">Dell Altitude</a></li>
+                            <li><a class="dropdown-item" href="#">lenovo ThinKpad</a></li>
+                            <li><a class="dropdown-item" href="#">Autre pc</a></li>
+                            </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">contact</a>
+                    </li>
+                </ul></div>
+                
+                
+            </div>
+            <div class="btn ms-auto"><a href="pay.html" id="se"><img src="https://pngimg.com/uploads/shopping_cart/shopping_cart_PNG38.png" width="80px" height="50px" alt=""></a></div>
+            <div ><a href="connexion.html" class="btn" id="se">Se connecter</a></div>
+            </div>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#btnn" aria-controls="navbarNav " aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+        </div>
+
+    </nav>
+        
+        <div class="row mb-4 py-5 mt-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-6"> Payment en ligne</h1>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="card ">
+                    <div class="card-header">
+                        <div class="bg-white shadow-sm pt-4 pl-2 pr-2 pb-2">
+                            <ul role="tablist" class="nav bg-light nav-pills rounded nav-fill mb-3">
+                                <li class="nav-item"> <a data-toggle="pill" href="#credit-card" class="nav-link active "> <i class="fas fa-credit-card mr-2"></i> carte bancaire</a> </li>
+                                <li class="nav-item"> <a data-toggle="pill" href="#paypal" class="nav-link "> <i class="fab fa-paypal "></i>   Paypal </a> </li>
+                                <li class="nav-item"> <a data-toggle="pill" href="#net-banking" class="nav-link "> <i class="fas fa-mobile-alt mr-4"></i> application </a> </li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <div id="credit-card" class="tab-pane fade show active pt-3">
+                                <form role="form" >
+                                    <div class="form-group"> <label for="username">
+                                            <h6>Nom de banck</h6>
+                                        </label> <input type="text" name="username" placeholder="Card Owner Name" required class="form-control "> </div>
+                                    <div class="form-group"> <label for="cardNumber">
+                                            <h6>RIB</h6>
+                                        </label>
+                                        <div class="input-group"> <input type="text" name="cardNumber" placeholder="Valid card number" class="form-control " required>
+                                            <div class="input-group-append"> <span class="input-group-text text-muted"> <i class="fab fa-cc-visa mx-1"></i> <i class="fab fa-cc-mastercard mx-1"></i> <i class="fab fa-cc-amex mx-1"></i> </span> </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div class="form-group"> <label><span class="hidden-xs">
+                                                        <h6>date de payement</h6>
+                                                    </span></label>
+                                                <div class="input-group"> <input type="number" placeholder="MM" name="" class="form-control" required> <input type="number" placeholder="YY" name="" class="form-control" required> </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="form-group mb-4"> <label data-toggle="tooltip" title="Three digit CV code on the back of your card">
+                                                    <h6>CVV <i class="fa fa-question-circle d-inline"></i></h6>
+                                                </label> <input type="text" required class="form-control"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer"> <button type="button" class="subscribe btn btn-primary btn-block shadow-sm"> Confirm Payment </button>
+                                </form>
+                            </div>
+                        </div> 
+                        <div id="paypal" class="tab-pane fade pt-3">
+                            <h6 class="pb-2">Select your paypal account type</h6>
+                            <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Domestic </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">International </label></div>
+                            <p> <button type="button" class="btn btn-primary "><i class="fab fa-paypal mr-2"></i> Log into my Paypal</button> </p>
+                            <p class="text-muted"> Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                        </div> 
+                        <div id="net-banking" class="tab-pane fade pt-3">
+                            <div class="form-group "> <label for="Select Your Bank">
+                                    <h6>Select your Bank</h6>
+                                </label> <select class="form-control" id="ccmonth">
+                                    <option value="" selected disabled>--Please select your Bank--</option>
+                                    <option>Bank 1</option>
+                                    <option>Bank 2</option>
+                                    <option>Bank 3</option>
+                                    <option>Bank 4</option>
+                                    <option>Bank 5</option>
+                                    <option>Bank 6</option>
+                                    <option>Bank 7</option>
+                                    <option>Bank 8</option>
+                                    <option>Bank 9</option>
+                                    <option>Bank 10</option>
+                                </select> </div>
+                            <div class="form-group">
+                                <p> <button type="button" class="btn btn-primary "><i class="fas fa-mobile-alt mr-2"></i> Proceed Payment</button> </p>
+                            </div>
+                            <p class="text-muted">Note: After clicking on the button, you will be directed to a secure gateway for payment. After completing the payment process, you will be redirected back to the website to view details of your order. </p>
+                        </div> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <footer class=" container-fluid text-lg-start bg-body-tertiary text-muted mt-4 " >
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-dark text-light">
+            <div class="me-5 d-none d-lg-block ">
+                <span>Get connected with us on social networks:</span>
+            </section>
+            <section>
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>stor Hassan-ECH
+                    </h6>
+                    <p>
+                        Ici, vous pouvez acheter tous types d'ordinateurs à des prix raisonnables avec une garantie de deux ans et une livraison à votre maison bievenu chez Hassan-ECH .
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Products
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">HP EliteBook</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">lenovo thinKPad </a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">dell </a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Tochiba</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                    </h6>
+                    <p>
+                    <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                    <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> ouled-teima, taroudant 8400 </p>
+                    <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    hassanchennah35@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 212 00 72 56 86</p>
+                    <p><i class="fa-brands fa-facebook me-3"></i>Hassan Chennah</p>
+                </div>
+                </div>
+            </div>
+            </section>
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05); ">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold " href="https://mdbootstrap.com/">Hassan-ECH.com</a>
+            </div>
+        </footer>  
+<script src="bootstrap.bundle.min.js"></script>
+<script src="all.min.js"></script>
+</body>
+</html>
